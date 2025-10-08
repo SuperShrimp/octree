@@ -391,7 +391,7 @@ void Octree<PointT, ContainerT>::initialize(const ContainerT& pts, const OctreeP
     data_ = &pts;
 
   const uint32_t N = pts.size();
-  successors_ = std::vector<uint32_t>(N);
+  successors_ = std::vector<uint32_t>(N);  //后继索引列表
 
   // determine axis-aligned bounding box.
   float min[3], max[3];
@@ -402,7 +402,7 @@ void Octree<PointT, ContainerT>::initialize(const ContainerT& pts, const OctreeP
   max[1] = min[1];
   max[2] = min[2];
 
-  for (uint32_t i = 0; i < N; ++i)
+  for (uint32_t i = 0; i < N; ++i) //遍历所有点得到Bounding Box的边界
   {
     // initially each element links simply to the following element.
     successors_[i] = i + 1;

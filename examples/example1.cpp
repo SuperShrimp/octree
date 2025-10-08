@@ -40,7 +40,7 @@ int main(int argc, char** argv)
 
   int64_t begin, end;
 
-  // initializing the Octree with points from point cloud.
+  // initializing the Octree with points from point cloud. 建立八叉树
   unibn::Octree<Point3f> octree;
   unibn::OctreeParams params;
   octree.initialize(points);

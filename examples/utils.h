@@ -32,4 +32,6 @@ void readPoints(const std::string& filename, ContainerT& points)
   in.close();
 }
 
+
+
 #endif /* EXAMPLES_UTILS_H_ */

@@ -1,5 +1,5 @@
 project(octree)
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.5)
 
 # Release by default
 # Turn on Debug with "-DCMAKE_BUILD_TYPE=Debug"
@@ -14,6 +14,7 @@ if(Boost_FOUND)
   ADD_EXECUTABLE(example1 examples/example1.cpp)
   ADD_EXECUTABLE(example2 examples/example2.cpp)
   ADD_EXECUTABLE(example3 examples/example3.cpp)
+  ADD_EXECUTABLE(fps examples/fps.cpp)
 endif()
 
 # find gtest ...
