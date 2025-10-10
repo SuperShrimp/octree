@@ -15,6 +15,7 @@ if(Boost_FOUND)
   ADD_EXECUTABLE(example2 examples/example2.cpp)
   ADD_EXECUTABLE(example3 examples/example3.cpp)
   ADD_EXECUTABLE(fps examples/fps.cpp)
+  ADD_EXECUTABLE(fps_claude examples/fps_claude.cpp)
 endif()
 
 # find gtest ...
